@@ -2,15 +2,12 @@
   <div class="slide-show" @mouseenter="stopRun" @mouseleave="startRun">
     <div class="slide-img">
       <a :href="slides[curIndex].href">
-        <!-- <transition name="trans-slide">
+        <transition name="trans-slide">
           <img v-if="curShow" :src="slides[curIndex].src">
         </transition>
         <transition name="trans-slide-old">
           <img v-if="!curShow" :src="slides[curIndex].src">
-        </transition> -->
-        <transition-group>
-          
-        </transition-group>
+        </transition>
       </a>
     </div>
     <h2>{{slides[curIndex].title}}</h2>
@@ -64,7 +61,7 @@ export default {
       setTimeout(() => {
         this.curShow = true;
         this.curIndex = index;
-      }, 10);
+      });
     },
     startRun() {
       this.curInterval = setInterval(() => {
