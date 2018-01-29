@@ -143,22 +143,26 @@ export default {
         {
           src: require('../assets/slideShow/pic1.jpg'),
           title: 'xxx1',
-          href: 'detail/analysis'
+          href: 'detail/analysis',
+          index: 0
         },
         {
           src: require('../assets/slideShow/pic2.jpg'),
           title: 'xxx2',
-          href: 'detail/count'
+          href: 'detail/count',
+          index: 1
         },
         {
           src: require('../assets/slideShow/pic3.jpg'),
           title: 'xxx3',
-          href: 'http://xxx.xxx.com'
+          href: 'http://xxx.xxx.com',
+          index: 2
         },
         {
           src: require('../assets/slideShow/pic4.jpg'),
           title: 'xxx4',
-          href: 'detail/forecast'
+          href: 'detail/forecast',
+          index: 3
         }
       ],
     };
