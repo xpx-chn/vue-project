@@ -20,16 +20,23 @@
             </keep-alive>
         </div>
         <div class="app-foot">&copy; 2016 fishenal MIT</div>
+        <my-dialog :is-show="isShowDialog">
+          <p>other Hello</p>
+        </my-dialog>
     </div>
 </template>
 
 <script>
+import Dialog from '@/components/Dialog.vue'
 export default {
   name: "my-app",
   data() {
     return {
-      msg: ""
+      isShowDialog: false
     };
+  },
+  components: {
+    myDialog: Dialog
   }
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-show="isShow">
       <div class="dialog-wrap">
           <div class="dialog-cover"></div>
           <div class="dialog-content">

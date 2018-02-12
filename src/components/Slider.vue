@@ -24,9 +24,6 @@
 <script>
 export default {
   name: "slider",
-  created() {
-    console.log(this.slides);
-  },
   props: {
     slides: {
       type: Array,
